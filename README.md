@@ -25,7 +25,7 @@ After seeking help from the Google mentors, we discovered there was a bug in the
 
 Additionally, after several hours of attempting to connect to our SQL server using JavaScript we discovered that this was not an easy task and were advised to switch over to PHP mid-project. 
 
-Some of the members were unfamiliar with using git and the process of creating branches, pulling and merging. Unfortunately, some changes were overwritten and hard to recover. We lost the proof that the form input fields were stubbed, being read and converted from JSON to string (using PHP and javascript) while upgrading our UI. (This feature is currently only available on @margarita26 local environment).
+Some of the members were unfamiliar with using git and the process of creating branches, pulling and merging. Unfortunately, some changes were overwritten and difficult to recover.
 
 ## Accomplishments 
 Over the course of SheHacks, our team all learned a lot about web development and what it requires. For a lot of us, today was our first contact with JavaScript and the Google Cloud Platform and we were all really excited to learn something new or discover a new tool for future use. Some of us learned SQL and some of us learned how to make webpages look beautiful, not just functional. 
