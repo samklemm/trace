@@ -1,4 +1,4 @@
-var json1;
+//var json1;
 
   function exportFromLocation() {
     let streetnumber = document.getElementById("street_number").value;
@@ -17,7 +17,7 @@ var json1;
     	selchbox.push(inpfields[i].value);
   }
 
-    json1 = {
+    let json1 = {
       "street_num": streetnumber,
       "street_name": streetname,
       "city": city,
@@ -30,4 +30,4 @@ var json1;
     alert("Here is a json location" + JSON.stringify(json1,1));  
   }
 
-  module.exports.loc = json1;
+  //module.exports.loc = json1;
