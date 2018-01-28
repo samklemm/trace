@@ -9,18 +9,8 @@ var app = express();
 
 app.enable('trust proxy');
 
-// Homepage route
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/homepage.html');
-});
-
-app.get('/homepage.js', function (req, res) {
-    console.log('homepage');
-    res.sendFile(__dirname + '/homepage.js')
-});
-
 // Index route
-app.get('/index.html', function (req, res) {
+app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
