@@ -23,6 +23,16 @@ To counter this, we have defined thresholds to ensure that not every person repo
 ## Challenges
 
 ## How to Deploy:
+Up until the end of February (when our Google Cloud Platform Key expires), we will be hosting it on appspot through [trace] (https://shehack-trace.appspot.com/)
+
+To host locally, navigate to the trace folder in the command prompt/terminal and type 
+```
+npm start
+```
+or
+```
+node app.js
+```
 
 ## Future Improvements:
   -Include functionality and preferences for men and LGBTQ community
