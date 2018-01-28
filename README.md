@@ -48,10 +48,4 @@ node app.js
 ```
 
 ## Built with:
-Google Cloud Platform's SQL/mySQL
-Google Map API
-JavaScript 
-Express
-PHP 
-HTML
-CSS
+Google Cloud Platform's SQL/mySQL, Google Map API, JavaScript, Express, PHP, HTML, CSS.
