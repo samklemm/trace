@@ -56,7 +56,7 @@ app.get('', function(req, res) {
     res.sendFile();
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 var knex = connect();
 
