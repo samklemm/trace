@@ -80,8 +80,10 @@ function connect () {
   return knex;
 }
 
-var loc = require('./exportimport2').loc;
-var per = require('./exportimport').per;
+//var loc = require('./exportimport2').loc;
+//var per = require('./exportimport').per;
+var loc = require('./exportimport2')
+var per = require('./exportimport')
 
 /**
  * Insert a location record into the database.
