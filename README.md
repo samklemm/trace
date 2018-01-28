@@ -15,19 +15,25 @@ The purpose of this service is not to prevent all sexual assault cases from happ
 ## Pitfalls: 
 1. Quite obviously, there is nothing preventing the creation of bogus sexual assault claims that were created out of hate. This system can be easily abused by either an individual with a vendetta or a group of people who wish to character assassinate another person. 
 2. Additionally it is possible that in the real world there are two people of the same first and last name in the same zip code. If only one were a sexual offender, this would harm the reputation of the innocent person. 
-3. Bug in the Google Cloud Shell —> The cloud shell was not appearing on the website console. Instead we needed to configure and externally connect the local terminal to the instance.
 
 ## Countermeasures: 
-To counter this, we have defined thresholds to ensure that not every person reported is immediately listed as dangerous to the public. 
+1. To counter this, we defined criteria to ensure that not every person reported is immediately listed as dangerous to the public. For example, requiring at least 3 different reports from 3 different people. Additionally, we use timestamps in our SQL database to track how many reports a user has made in a week and throwing out any reports made by a user who's submitted more than 7.
+2. To counter the possibility of having two people with the same name in the same area, we've implemented the option of physical description to increase the likelihood that users will be able to differentiate one person from the other. Even factors like location could possibly help determine the correct person if certain locations are more likely to be visited by certain people (a favorite cafe, for example). 
 
 ## Challenges
+After seeking help from the Google mentors, we discovered there was a bug in the Google Cloud Shell, which prevented it from appearing on the website console. After much troubleshooting, we finally configured and externally connected the local terminal to the instance. Only after several more hours of delay were we able to finally connect our database to the cloud server and continue with the project. 
+
+Additionally, after several hours of attempting to connect to our SQL server using JavaScript we discovered that this was not an easy task and were advised to switch over to PHP mid-project. 
 
 ## Accomplishments 
+Over the course of SheHacks, our team all learned a lot about web development and what it requires. For a lot of us, today was our first contact with JavaScript and the Google Cloud Platform and we were all really excited to learn something new or discover a new tool for future use. Some of us learned SQL and some of us learned how to make webpages look beautiful, not just functional. 
 
 ## What We Learned
+Web Development was a topic that was new to almost all of the members of our team. Our first attempt at creating our own website proved more difficult than expected. Discovering how the parts of a website interact in order to bring together a cohesive experience demanded more background than expected. If nothing else, we all enjoyed our time here learning to create something new and I can confidently say we all discovered something else we'd like to learn when we leave. 
 
 ## Future Improvements:
-  -Expand on accessibility features with the HTML pages
+Better data input verification
+If given more time or resources, we would have liked to been able to define a method of determining what records are truly outliers and which are truly statistically significant. Perhaps we could've ran a could linear regressions and eventually determined a more reliable set of variables than arbitrarily placing cutoffs. 
 
 ## How to Deploy:
 Up until the end of February (when our Google Cloud Platform Key expires), we will be hosting it on appspot through https://shehack-trace.appspot.com/
@@ -42,3 +48,10 @@ node app.js
 ```
 
 ## Built with:
+Google Cloud Platform's SQL/mySQL
+Google Map API
+JavaScript 
+Express
+PHP 
+HTML
+CSS
