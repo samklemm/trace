@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>trace_Maps</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+
+
+      function initMap() {
+        var uluru = {lat: 42.3505, lng: -71.1204};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+
+
+    
+
+        var longfellow_place = {lat: 42.363543, lng: -71.064338};
+        var l_place = new google.maps.Marker({
+          position: longfellow_place,
+          map: map,
+          icon: 'orange_markerB.png',
+          title: '10/12/2017' 
+        });
+  var l_place_contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading"> Unwanted Touching, Stalking </h1>'+
+            '<div id="bodyContent">'+
+            '<p>10/12/2017' +'</p>' + 
+            '</div>'+ 
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: l_place_contentString
+        });
+          l_place.addListener('click', function() {
+          infowindow.open(map, l_place);
+          });
+
+        var longfellow_place1 = {lat: 42.363545, lng: -71.064339};
+        var l_place1 = new google.maps.Marker({
+          position: longfellow_place1,
+          map: map,
+          icon: 'orange_markerB.png',
+          title: '10/12/2017' 
+        });
+  var l_place_contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading"> Unwanted Touching, Stalking </h1>'+
+            '<div id="bodyContent">'+
+            '<p>10/12/2017' +'</p>' + 
+            '</div>'+ 
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: l_place_contentString1
+        });
+          l_place1.addListener('click', function() {
+          infowindow.open(map, l_place1);
+          });
+
+
+
+
+
+
+        var market_street = {lat: 42.360268, lng:-71.054772};
+        var date = 19990410; 
+        if(date<20130128){
+        var m_street = new google.maps.Marker({
+          position: market_street,
+          map: map,
+          icon: 'pink_markerC.png'
+
+        }); }
+        else {
+          var m_street = new google.maps.Marker({
+          position: market_street,
+          map: map,
+          icon: 'red_markerC.png'
+
+        });
+        }
+
+        var westland_avenue = {lat: 42.343948, lng: -71.088051};
+        var w_avenue = new google.maps.Marker({
+          position: westland_avenue,
+          map: map,
+          icon: 'yellow_markerA.png',
+          title: '05/01/2015'
+          });
+
+         var w_avenue_contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Verbal Harassment, Groping</h1>'+
+            '<div id="bodyContent">'+
+            '<p>05/01/2015' +'</p>' + 
+            '</div>'+ 
+            '</div>';
+
+        var infowindow1 = new google.maps.InfoWindow({
+          content: w_avenue_contentString
+        });
+
+
+        w_avenue.addListener('click', function() {
+          infowindow1.open(map, w_avenue);
+          });
+
+        var commonwealth = {lat: 42.350733, lng: -71.109004};
+        var c_wealth = new google.maps.Marker({
+            position: commonwealth,
+            map: map,
+            icon: 'red_markerC.png'
+        });
+/*
+        var howl_at_the_moon = {lat: 42.350739, lng: -71.109005};
+        var date = 20070608;
+        if(date<20080128){
+        var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon,
+          map: map,
+          icon: 'pink_markerC.png'
+                       
+           }); }
+
+        else {
+          var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon,
+          map: map,
+          icon: 'red_markerC.png'
+       }); }
+
+        var howl_at_the_moon1 = {lat: 41.4962, lng: -71.7036};
+        date = 20100815;
+        if(date<20080128){
+        var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon1,
+          map: map,
+          icon: 'pink_markerC.png' 
+        }); }
+
+        else {
+          var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon1,
+          map: map,
+          icon: 'red_markerC.png'
+       }); }
+
+        var howl_at_the_moon2 = {lat: 41.4970, lng: -71.7040};
+        date = 20160930;
+        if(date<20080128){
+        var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon2,
+          map: map,
+          icon: 'pink_markerC.png' 
+        }); }
+
+        else {
+          var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon2,
+          map: map,
+          icon: 'red_markerC.png'
+       }); }
+
+        var howl_at_the_moon3 = {lat: 41.4972, lng: -71.7041};
+        date = 20161112;
+        if(date<20080128){
+        var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon3,
+          map: map,
+          icon: 'pink_markerC.png' }); }
+
+        else {
+          var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon3,
+          map: map,
+          icon: 'red_markerC.png'
+       }); }
+
+        var howl_at_the_moon4 = {lat: 41.4972, lng: -71.7041};
+        date = 20130315;
+        if(date<20080128){
+        var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon4,
+          map: map,
+          icon: 'pink_markerC.png' }); }
+
+        else {
+          var h_moon = new google.maps.Marker({
+          position: howl_at_the_moon4,
+          map: map,
+          icon: 'red_markerC.png'
+       }); }*/
+  
+  
+  
+  
+  
+  
+
+      }
+    </script>
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6oz7mM6mOGb0S8IMi_iVSnE1nqD2mLNo&callback=initMap">
+    </script>
+  </body>
+</html>
