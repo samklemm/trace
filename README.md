@@ -15,7 +15,7 @@ The purpose of this service is not to prevent all sexual assault cases from happ
 ## Pitfalls: 
 1. Quite obviously, there is nothing preventing the creation of bogus sexual assault claims that were created out of hate. This system can be easily abused by either an individual with a vendetta or a group of people who wish to character assassinate another person. 
 2. Additionally it is possible that in the real world there are two people of the same first and last name in the same zip code. If only one were a sexual offender, this would harm the reputation of the innocent person. 
-3. Google Cloud bug —> local 
+3. Bug in the Google Cloud Shell —> The cloud shell was not appearing on the website console. Instead we needed to configure and externally connect the local terminal to the instance.
 
 ## Countermeasures: 
 To counter this, we have defined thresholds to ensure that not every person reported is immediately listed as dangerous to the public. 
