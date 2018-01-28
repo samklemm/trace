@@ -26,19 +26,9 @@ app.get('/locationreport.html', function (req, res) {
     res.sendFile(__dirname + '/locationreport.html');
 });
 
-app.get('/locationreport.js', function (req, res) {
-    console.log('locationreport');
-    res.sendFile(__dirname + '/locationreport.js')
-});
-
 // Person Report route
 app.get('/personreport.html', function (req, res) {
     res.sendFile(__dirname + '/personreport.html');
-});
-
-app.get('/personreport.js', function (req, res) {
-    console.log('personreport');
-    res.sendFile(__dirname + '/personreport.js')
 });
 
 // Person Report ExportImport
