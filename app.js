@@ -9,6 +9,8 @@ var app = express();
 
 app.enable('trust proxy');
 
+app.use(express.static(__dirname));
+
 // Index route
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
@@ -55,8 +57,6 @@ app.get('', function(req, res) {
     console.log('');
     res.sendFile();
 });
-
-app.use(express.static(path.join(__dirname, '/public')));
 
 var knex = connect();
 
