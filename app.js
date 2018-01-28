@@ -19,6 +19,16 @@ app.get('/homepage.js', function (req, res) {
     res.sendFile(__dirname + '/homepage.js')
 });
 
+// Index route
+app.get('/index.html', function (req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/index.js', function (req, res) {
+    console.log('index');
+    res.sendFile(__dirname + '/index.js')
+});
+
 // Location Report route
 app.get('/locationreport.html', function (req, res) {
     res.sendFile(__dirname + '/locationreport.html');
