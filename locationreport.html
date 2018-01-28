@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trace</title>
+      <!-- Compiled and minified CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Encode Sans Semi Condensed' rel='stylesheet'>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+
+</head>
+<body>
+  <header role="banner" class="header">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="home.html"><img src="http://res.cloudinary.com/sklemm/image/upload/v1517099251/Screen_Shot_2018-01-27_at_7.27.02_PM_o4hblq.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="location.html">Report a Location</a></li>
+        <li><a href="person.html">Report a Person</a></li>
+        <li><a href="useful.html">Useful Links</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main role="main" class="wrapper">
+
+  <h1>Location Report</h1>
+
+  <div>
+    <div class="row">
+      
+    <form class="col s12">
+      <h2 class="pink form-heading">Fill out the following form about your aggressor to report an incident</h2>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix" aria-hidden>location_city</i>
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Street Number</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Street Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix" aria-hidden></i>
+          <input id="physical" type="text" class="validate">
+          <label for="physical">City</label>
+        </div>
+
+        <div class="input-field col s6">
+          <i class="material-icons prefix" aria-hidden></i>
+          <input id="location" type="text" class="validate">
+          <label for="location">State</label>
+        </div>
+      </div>
+      <div class="row">
+         <div class="input-field col s6">
+          <i class="material-icons prefix" aria-hidden></i>
+          <input id="location" type="text" class="validate">
+          <label for="location">Zip Code</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix" aria-hidden>today</i>
+          <input id="date" type="text" class="validate">
+          <label for="date">Date</label>
+        </div>
+      </div>
+
+      <fieldset class="form-group flex">
+        <legend class="form-legend">Select any that apply:</legend>
+        <p>
+          <input type="checkbox" class="filled-in" id="verbalharassment" value="verbalharassment"/>
+          <label for="verbalharassment">Verbal Harrassment</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="nonsexualtouching" value="nonsexualtouching"/>
+          <label for="nonsexualtouching">Unwanted touching - non sexual</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="sexualtouching" value="sexualtouching"/>
+          <label for="sexualtouching">Unwanted touching - sexual</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="stalking" value="stalking"/>
+          <label for="stalking">Stalking</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="peeping" value="peeping"/>
+          <label for="peeping">Peeping</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="indecentexposure" value="indecentexposure"/>
+          <label for="indecentexposure">Indecent Exposure</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="nonconsensualsex" value="nonconsensualsex"/>
+          <label for="nonconsensualsex">Full nonconsensual sexual intercourse</label>
+        </p>
+      </fieldset>
+      <button class="btn btn-large pink waves-effect waves-light" type="submit" name="action">Submit
+      <i class="material-icons right white-text">send</i>
+    </button>
+    </form>
+  </div>
+  </div>
+</main>
+
+
+  <div id="sendmessage" hidden> Your message has been sent successfully. Thank you. </div>
+
+</body>
+</html>
