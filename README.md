@@ -25,6 +25,8 @@ After seeking help from the Google mentors, we discovered there was a bug in the
 
 Additionally, after several hours of attempting to connect to our SQL server using JavaScript we discovered that this was not an easy task and were advised to switch over to PHP mid-project. 
 
+Some of the members were unfamiliar with using git and the process of creating branches, pulling and merging. Unfortunately, some changes were overwritten and hard to recover. We lost the proof that the form input fields were stubbed, being read and converted from JSON to string (using PHP and javascript) while upgrading our UI. (This feature is currently only available on @margarita26 local environment).
+
 ## Accomplishments 
 Over the course of SheHacks, our team all learned a lot about web development and what it requires. For a lot of us, today was our first contact with JavaScript and the Google Cloud Platform and we were all really excited to learn something new or discover a new tool for future use. Some of us learned SQL and some of us learned how to make webpages look beautiful, not just functional. 
 
@@ -32,8 +34,15 @@ Over the course of SheHacks, our team all learned a lot about web development an
 Web Development was a topic that was new to almost all of the members of our team. Our first attempt at creating our own website proved more difficult than expected. Discovering how the parts of a website interact in order to bring together a cohesive experience demanded more background than expected. If nothing else, we all enjoyed our time here learning to create something new and I can confidently say we all discovered something else we'd like to learn when we leave. 
 
 ## Future Improvements:
-Better data input verification
+Better data input verification and restrictions on the format of the form inputs.
+
 If given more time or resources, we would have liked to been able to define a method of determining what records are truly outliers and which are truly statistically significant. Perhaps we could've ran a could linear regressions and eventually determined a more reliable set of variables than arbitrarily placing cutoffs. 
+
+Successfully connect to the database with options to read and create location and person records.
+
+Implement login page.
+
+Have messages, banners or success/fail page to indicate form submission.
 
 ## How to Deploy:
 Up until the end of February (when our Google Cloud Platform Key expires), we will be hosting it on appspot through https://shehack-trace.appspot.com/
