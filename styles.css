@@ -1,6 +1,30 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+.gradient {
  background-image: linear-gradient(to top right, #D40070 0%, #8823AE 100%);
   min-height: 100vh;
+}
+
+/* this is for form pages */
+body,
+.form-background {
+  margin: auto;
+  background: #eaeaea;
+  font-family: "Encode Sans Semi Condensed";
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #666;
+  margin-top: 50px;
+}
+
+form {
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
 }
 
 .home-wrapper{
@@ -8,8 +32,8 @@ body {
  flex-direction: column;
  align-items: center;
   justify-content: center;
-  margin: 5em;
-  min-height:70vh;
+/*   margin: 5em; */
+/*   min-height:70vh; */
 }
 
 .home-nav {
@@ -20,19 +44,71 @@ body {
  box-shadow: none;
 }
 
-.logo-lg{
-  width:80%;
-  
+.nav-gradient,
+.footer-gradient {
+  background-image: linear-gradient(to top right, #D40070 0%, #8823AE 100%);
 }
 
-.btn{
+.logo-lg{
+  width:42.100em; 
+  height: 14.743em
+}
+
+.logo-sm{
+  width: 8.662em;
+  height: 3.033em;
+  margin: 1em; 
+}
+
+.btn-homeview {
 margin: 0 1em;
+}
+
+.btn-submit {
+  margin: 1em 0;
 }
 
 .subtitle{
   font-size: 2em;
   color: white;
-  text-align:center;
+  text-align: center;
 }
 
+.form-wrapper {
+  margin: 3em;
+}
+
+.form-heading {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  text-shadow: none;
+  text-align: left;
+}
+
+.form-legend {
+  font-size: 32px;
+}
+
+#sendmessage {
+  border: 1px solid #fff;
+  display: none;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
+  margin-bottom: 30px;
+  background-color: #ebf6e0;
+  color: #5f9025;
+  border: 1px solid #b3dc82;
+  padding: 13px 40px 13px 18px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+#sendmessage.show,
+.show {
+  display: block;
+}
 

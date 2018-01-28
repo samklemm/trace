@@ -1,11 +1,9 @@
-  
-
-  function exportFrom() {
-    let firstname =  document.getElementById("firstname").value;
-    let lastname =  document.getElementById("lastname").value;
+function exportFromPerson() {
+    let firstname =  document.getElementById("first_name").value;
+    let lastname =  document.getElementById("last_name").value;
     let physical = document.getElementById("physical").value;
     let location = document.getElementById("location").value;
-    let date = document.getElementById("example-date-input").value;
+    let date = document.getElementById("date").value;
 
   var selchbox = [];
 
@@ -13,10 +11,11 @@
 
   for(var i=0; i< inpfields.length; i++) {
     if(inpfields[i].type == 'checkbox' && inpfields[i].checked == true) 
-    	selchbox.push(inpfields[i].value);
+      selchbox.push(inpfields[i].value);
   }
 
-    let json1 = {
+>>>>>>> 0ea7d6a8b8b40ba8519c07bf259553a91eb0161a
+    let json2 = {
       "first_name": firstname,
       "last_name": lastname,
       "physical": physical,
@@ -25,6 +24,5 @@
       "harrassment": selchbox
     };
     
-    alert("Here is a json " + JSON.stringify(json1,1));  
-
+    alert("Here is a json person" + JSON.stringify(json2,1));  
   }
