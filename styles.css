@@ -1,0 +1,38 @@
+body {
+ background-image: linear-gradient(to top right, #D40070 0%, #8823AE 100%);
+  min-height: 100vh;
+}
+
+.home-wrapper{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  justify-content: center;
+  margin: 5em;
+  min-height:70vh;
+}
+
+.home-nav {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  background: none;
+ box-shadow: none;
+}
+
+.logo-lg{
+  width:80%;
+  
+}
+
+.btn{
+margin: 0 1em;
+}
+
+.subtitle{
+  font-size: 2em;
+  color: white;
+  text-align:center;
+}
+
+
