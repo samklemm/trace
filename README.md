@@ -22,6 +22,13 @@ To counter this, we have defined thresholds to ensure that not every person repo
 
 ## Challenges
 
+## Accomplishments 
+
+## What We Learned
+
+## Future Improvements:
+  -Expand on accessibility features with the HTML pages
+
 ## How to Deploy:
 Up until the end of February (when our Google Cloud Platform Key expires), we will be hosting it on appspot through https://shehack-trace.appspot.com/
 
@@ -34,12 +41,4 @@ or
 node app.js
 ```
 
-## Future Improvements:
-  -Include functionality and preferences for men and LGBTQ community
-  -Expand on accessibility features with the HTML pages
-  
-  This was built using
-  Accomplishments
-  what we learned
-  what's next Trace
-  built with 
+## Built with:
