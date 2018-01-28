@@ -13,9 +13,9 @@ Each “assailant” is an instance of a unique combination of first name, last 
 The purpose of this service is not to prevent all sexual assault cases from happening, but to use the collective experiences of the community to warn people of potential threats that exist already within their community. Too many times has a victim of sexual abuse blamed themselves for the suffering of victims after them. Additionally, we hope that by seeing the number of total reported cases against aggressors, this will show victims that they aren’t alone and even encourage them to report the incident to law enforcement. 
 
 ## Pitfalls: 
-# 1. Quite obviously, there is nothing preventing the creation of bogus sexual assault claims that were created out of hate. This system can be easily abused by either an individual with a vendetta or a group of people who wish to character assassinate another person. 
-# 2. Additionally it is possible that in the real world there are two people of the same first and last name in the same zip code. If only one were a sexual offender, this would harm the reputation of the innocent person. 
-# 3. Google Cloud bug —> local 
+### 1. Quite obviously, there is nothing preventing the creation of bogus sexual assault claims that were created out of hate. This system can be easily abused by either an individual with a vendetta or a group of people who wish to character assassinate another person. 
+### 2. Additionally it is possible that in the real world there are two people of the same first and last name in the same zip code. If only one were a sexual offender, this would harm the reputation of the innocent person. 
+### 3. Google Cloud bug —> local 
 
 ## Countermeasures: 
 To counter this, we have defined thresholds to ensure that not every person reported is immediately listed as dangerous to the public. 
