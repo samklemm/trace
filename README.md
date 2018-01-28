@@ -36,7 +36,7 @@ Web Development was a topic that was new to almost all of the members of our tea
 ## Future Improvements:
 Better data input verification and restrictions on the format of the form inputs.
 
-If given more time or resources, we would have liked to been able to define a method of determining what records are truly outliers and which are truly statistically significant. Perhaps we could've ran a could linear regressions and eventually determined a more reliable set of variables than arbitrarily placing cutoffs. 
+If given more time or resources, we would have liked to been able to define a method of determining what records are truly outliers and which are truly statistically significant. Perhaps we could've ran linear regressions and eventually determined a more reliable set of variables than arbitrarily placing cutoffs. 
 
 Successfully connect to the database with options to read and create location and person records.
 
