@@ -55,6 +55,7 @@ or
 ```
 node app.js
 ```
+warning: might need to install missing dependency node modules using npm install ___
 
 ## Built with:
 Google Cloud Platform's SQL/mySQL, Google Map API, JavaScript, Express, PHP, HTML, CSS.
