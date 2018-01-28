@@ -175,7 +175,7 @@ i {
 
 .form-heading {
   font-size: 18px;
-/*   background: #e91e63; */
+/*   background-color: #ee416e; */
   color: rgb(255, 255, 255);
   padding: 22px 25px;
   border-radius: 5px 5px 0px 0px;
@@ -191,3 +191,10 @@ i {
 .flex{
   display: flex;
 }
+
+.nav-wrapper img {
+    height: 65px;
+    width: 120px;
+  }
+
+
