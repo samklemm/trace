@@ -1,0 +1,142 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+  <link href='https://fonts.googleapis.com/css?family=Encode Sans Semi Condensed' rel='stylesheet'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<script type="text/javascript" src="exportimport.js"></script>
+
+</head>
+
+<body>
+  <header role="banner" class="header">
+  <nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="Trace">
+  </a>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+</ul>
+</nav>
+</header>
+
+<main role="main">
+
+  <h1>Incident Report</h1>
+
+  <form>
+    <h2>Fill out the following form about your aggressor to report an incident</h2>
+    <div class="contentform">
+  
+      <div class="form-left">
+        <div class="form-group">
+          <label for="firstname">
+            <span>
+              <i class="fa fa-male" aria-hidden="true"></i>
+            </span>&nbsp;First Name
+          </label>
+          <input type="firstname" class="form-control" id="firstname" required>
+        </div>
+        
+         <div class="form-group">
+          <label for="lastname">
+            <span>
+              <i class="fa fa-male" aria-hidden="true"></i>
+            </span>&nbsp;Last Name
+          </label>
+           <input type="lastname" class="form-control" id="lastname"  required></div>
+           
+        <div class="form-group">
+          <label for="physical">
+            <span>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+            </span>&nbsp;Distinctive Physical Features
+          </label>
+          <input type="physical" class="form-control" id="physical"  required>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">
+            <span>
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </span>&nbsp;Location
+          </label>
+          <input type="location" class="form-control" id="location"  required>
+        </div> 
+           
+      </div>
+
+      
+
+      <div class="form-right">
+        
+      <div class="form-group">
+        <label for="example-date-input">Date</label>
+        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      </div>
+        
+      <fieldset class="form-group flex">
+        <legend>Select any that apply:</legend>
+        <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="verbalharrassment" name="offense" value="Verbal Harrassment">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Verbal Harrassment</span>
+        </label>
+         
+          <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="touching" name="offense" value="Unwanted touching - non sexual">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description" >Unwanted touching - non sexual</span>
+        </label>
+         
+          <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="sexualtouching" name="offense" value="Unwanted touching - sexual">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Unwanted touching - sexual</span>
+        </label>
+         
+          <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="stalking" name="offense" value="Stalking">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Stalking</span>
+        </label>
+         
+          <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="peeping" name="offense" value="Peeping">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Peeping</span>
+        </label>
+         
+          <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="exposure" name="offense" value="Indecent Exposure">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Indecent Exposure</span>
+        </label>
+         
+          <label class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="intercourse" name="offense" value="Full nonconsensual sexual intercourse">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Full nonconsensual sexual intercourse</span>
+        </label>  
+      </fieldset>
+    </div>
+  </div>
+
+    <button type="submit" class="button" onclick="exportFrom()">Send</button>
+  </form>
+</main>
+
+
+  <div id="sendmessage" hidden> Your message has been sent successfully. Thank you. </div>
+
+
+</body>
+</html>
