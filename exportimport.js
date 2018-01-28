@@ -1,5 +1,3 @@
-//var json2;
-
 function exportFromPerson() {
     let firstname =  document.getElementById("first_name").value;
     let lastname =  document.getElementById("last_name").value;
@@ -16,7 +14,7 @@ function exportFromPerson() {
       selchbox.push(inpfields[i].value);
   }
 
-    let json2 = {
+    var json2 = {
       "first_name": firstname,
       "last_name": lastname,
       "physical": physical,
@@ -25,7 +23,7 @@ function exportFromPerson() {
       "harrassment": selchbox
     };
     
-    alert("Here is a json person" + JSON.stringify(json2,1));  
-  }
 
- // module.exports.per = json2;
+    alert("Here is a json person" + JSON.stringify(json2,1));  
+    
+  }
